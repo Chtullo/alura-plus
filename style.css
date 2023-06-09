@@ -12,6 +12,7 @@ body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+    height: 100%;
 }
 
 * {
@@ -26,6 +27,12 @@ body {
     align-items: center;
     text-align: center;
 }
+
+a:link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
 
 .container {
     height: 100vh;
@@ -114,4 +121,39 @@ body {
 .lista__item {
     font-size: 32px;
     color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 0 3em;
+}
+.rodape__logo {
+    display: block;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.rodape__lista {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px;
+    gap: 16px;
+    margin-left: 5em;
+    margin-bottom: 2em;
+    text-align: center;
+    list-style-type: none;
+    color: var(--branco-principal);
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
 }
